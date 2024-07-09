@@ -8,15 +8,43 @@
 
 }
 
+ .setter{
+  display: flex; /* Make the container a flexbox */
+  justify-content: center; /* Center elements horizontally within the container */
+  align-items: center; /* Center elements vertically within the container */
+  position: relative; /* Needed for absolute positioning of logo */
+  top: 50%; /* Vertically center the container (adjust if needed) */
+  transform: translateY(-50%); /* Offset the container to compensate for top positioning */
+    }
+    #title{
+        position: relative;
+        margin-left: -300px;
+        text-align: center-left;
+        color: white;
+        font-size: 50px;
+        height: 90vh;
+}
+
+#logo{
+    position: relative;
+    text-align: center;
+    height: 160px;
+    width: 160px;
+    margin-top: -450px;
+    margin-right: -300px;
+
+
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('secondimg2.jpg') no-repeat;
+    background: url('bck.jpg') repeat-y;
     background-size: cover;
     background-position: center;
 }
+
 
 
 .wrapper{
@@ -35,6 +63,12 @@ body{
     font-size: 36px;
     text-align: center;
 
+}
+
+.conS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper .input-box{
@@ -139,5 +173,37 @@ body{
 }
 
 
+.backbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.backbutton:hover{
+    text-decoration: none;
+}
 
 
+.pointCheck {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    pointer-events: none;
+}
+.pointCheck:hover{
+    text-decoration: none;
+    pointer-events: none;
+}

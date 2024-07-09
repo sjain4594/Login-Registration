@@ -21,7 +21,7 @@
                 <i class='bx bxs-envelope' ></i>
             </div>  
             <div class="input-box">
-                <input type="text" name = "username" placeholder="Username" required>
+                <input type="text" name = "username" placeholder="Full Name" required>
                 <i class='bx bxs-user'></i>
             </div>  
             <div class="input-box">
@@ -29,11 +29,16 @@
                 <i class='bx bxs-lock-alt' ></i>
             </div> 
             <div class="input-box">
-            <select name="role">
+            <select name="role" id = "srole">
                 <option value="student">Student</option>
                 <option value="admin">Administrator</option>
               </select>
             </div>
+             <div class="input-box" id = "acode" style="display: none">
+                <input type="number" name = "code" placeholder="Admin Code">
+                <i class='bx bxs-lock-alt' ></i>
+            </div> 
+            
 
             <button type = "submit" class="btn">Register</button>
 
@@ -43,6 +48,7 @@
             </div>
         </form>
     </div>
+    <script src = "script.js"></script>
 </body>
 
 </html>
